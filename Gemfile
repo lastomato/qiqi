@@ -25,8 +25,9 @@ gem 'mongoid_auto_inc'
 gem 'bcrypt-ruby'
 
 gem 'coderay'
+gem 'redcarpet'
 
-gem 'ckeditor'
+gem 'kaminari'
 
 
 
