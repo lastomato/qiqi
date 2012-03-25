@@ -1,0 +1,9 @@
+<%= link_to "New Topic", topic_new_path, :remote => true %>
+
+<% if @topics && @topics.any? %>
+    <%= div_for @topics, :class => "topic" do |t| %>
+        <%= t.title %>
+    <% end %>
+<% end %>
+
+<%= paginate :topics, :remote => true %>
