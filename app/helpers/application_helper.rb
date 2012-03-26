@@ -13,6 +13,7 @@ module ApplicationHelper
       Coderay.scan($2, $1).div(defaults.merge(options))
     end
   end
+<<<<<<< HEAD
 
   def at_notification(content, options = {})
     content.gsub(/(^|[^a-zA-Z0-9_!#\$%&*@＠])(@|＠)([a-zA-Z0-9][a-zA-Z0-9_-]{1,14})/) do
@@ -20,3 +21,6 @@ module ApplicationHelper
     end
   end
 end
+=======
+end
+>>>>>>> a7b7f2d06edb2e5708607ecada84a371ac29506f

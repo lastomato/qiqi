@@ -26,8 +26,11 @@ Qiqi::Application.routes.draw do
   namespace :user do
     match "/index" => "users#index"
     match "/create" => "users#create"
+<<<<<<< HEAD
 
     match "/:username" => "users#single"
+=======
+>>>>>>> a7b7f2d06edb2e5708607ecada84a371ac29506f
     match "/destroy/:number" => "users#destroy"
   end
 end

@@ -14,6 +14,7 @@ class TopicsController < ApplicationController
     @topic = @user.topics.build(params[:topic])
 
     if @topic.try(:save)
+<<<<<<< HEAD
       respond_to do |format|
         format.js
       end
@@ -21,6 +22,9 @@ class TopicsController < ApplicationController
       respond_to do |format|
         format.js { render "shared/fail_to_create" }
       end
+=======
+    else
+>>>>>>> a7b7f2d06edb2e5708607ecada84a371ac29506f
     end
   end
 
@@ -32,6 +36,7 @@ class TopicsController < ApplicationController
     @reply.user = @user
 
     if @user && @topic && @reply.try(:save)
+<<<<<<< HEAD
       respond_to do |format|
         format.js
       end
@@ -39,6 +44,9 @@ class TopicsController < ApplicationController
       respond_to do |format|
         format.js { render "shared/fail_to_reply" }
       end
+=======
+    else
+>>>>>>> a7b7f2d06edb2e5708607ecada84a371ac29506f
     end
   end
 
@@ -46,6 +54,7 @@ class TopicsController < ApplicationController
     @topic = Topic.find(params[:id])
 
     if @topic.try(:destroy)
+<<<<<<< HEAD
       respond_to do |format|
         format.js
       end
@@ -53,6 +62,9 @@ class TopicsController < ApplicationController
       respond_to do |format|
         format.js { render "shared/fail_to_destroy" }
       end
+=======
+    else
+>>>>>>> a7b7f2d06edb2e5708607ecada84a371ac29506f
     end
   end
 end
