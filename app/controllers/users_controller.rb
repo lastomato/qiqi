@@ -18,18 +18,14 @@ class UsersController < ApplicationController
     end
   end
 
-<<<<<<< HEAD
   def single
     @user ||= User.find_by_username(params[:username])
   end
 
-=======
->>>>>>> a7b7f2d06edb2e5708607ecada84a371ac29506f
   def destroy
     @user ||= User.find_by_number(params[:number])
 
     if @user.try(:destroy)
-<<<<<<< HEAD
       respond_to do |format|
         format.js
       end
@@ -37,9 +33,6 @@ class UsersController < ApplicationController
       respond_to do |format|
         format.js { render "shared/fail_to_destroy" }
       end
-=======
-    else
->>>>>>> a7b7f2d06edb2e5708607ecada84a371ac29506f
     end
   end
 end

@@ -21,17 +21,10 @@ class User
   validates_confirmation_of :password
 
   validates_uniqueness_of :username
-<<<<<<< HEAD
   validates_format_of :username, :with => %r/\A[a-z0-9][a-z0-9_-]{1,14}\Z/i
 
   validates_uniqueness_of :email
   validates_format_of :email, :with => %r/\A([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})\Z/i
-=======
-  validates_format_of :username, :with => %r/\A[a-z0-9][a-z0-9_-]{1,14}\Z/
-
-  validates_uniqueness_of :email
-  validates_format_of :email, :with => %r/\A([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})\Z/
->>>>>>> a7b7f2d06edb2e5708607ecada84a371ac29506f
 
   has_many :topics, :dependent => :nullify
   has_many :replies, :dependent => :nullify
@@ -54,16 +47,11 @@ class User
     end
   end
 
-<<<<<<< HEAD
   class << self
     ["number", "username"].each do |s|
       define_method(:"find_by_#{s}") do |p|
         where(:"#{s}" => p).first
       end
     end
-=======
-  def self.find_by_number(number)
-    where(:number => number).first
->>>>>>> a7b7f2d06edb2e5708607ecada84a371ac29506f
   end
 end

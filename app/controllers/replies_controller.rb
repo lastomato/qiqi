@@ -13,7 +13,6 @@ class RepliesController < ApplicationController
     @child.user = @user
 
     if @user && @parent && @child.save
-<<<<<<< HEAD
       respond_to do |format|
         format.js
       end
@@ -21,9 +20,6 @@ class RepliesController < ApplicationController
       respond_to do |format|
         format.js { render "shared/fail_to_reply" }
       end
-=======
-    else
->>>>>>> a7b7f2d06edb2e5708607ecada84a371ac29506f
     end
   end
 
@@ -31,7 +27,6 @@ class RepliesController < ApplicationController
     @reply = Reply.find(params[:id])
 
     if @reply.try(:destroy)
-<<<<<<< HEAD
       respond_to do |format|
         format.js
       end
@@ -39,9 +34,6 @@ class RepliesController < ApplicationController
       respond_to do |format|
         format.js { render "shared/fail_to_destroy" }
       end
-=======
-    else
->>>>>>> a7b7f2d06edb2e5708607ecada84a371ac29506f
     end
   end
 end
