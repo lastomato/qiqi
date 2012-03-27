@@ -30,5 +30,7 @@ gem 'redcarpet'
 
 gem 'kaminari'
 
+gem 'twitter-bootstrap-rails'
+
 
 

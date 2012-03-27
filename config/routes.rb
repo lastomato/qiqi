@@ -6,7 +6,7 @@ Qiqi::Application.routes.draw do
   match "/register" => "users#new"
 
   namespace :session do
-    match "/session/create" => "sessions#create"
+    match "/create" => "sessions#create"
   end
 
   namespace :reply do

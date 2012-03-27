@@ -15,7 +15,7 @@ module ApplicationHelper
   end
 
   def at_notification(content, options = {})
-    content.gsub(/(^|[^a-zA-Z0-9_!#\$%&*@＠])(@|＠)([a-zA-Z0-9][a-zA-Z0-9_-]{1,14})/) do
+    content.gsub(/(^|[^a-zA-Z0-9_!#\$%&*@])(@)([a-zA-Z0-9][a-zA-Z0-9_-]{1,14})/) do
       %(<a href="#{user_url($3)}" class="#{options[:class]}">#{$1 + $2 + $3}</a>)
     end
   end
