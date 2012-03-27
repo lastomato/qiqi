@@ -8,7 +8,7 @@ class RepliesController < ApplicationController
   def reply
     @user = User.find_by_number(current_user.number)
     @parent = Reply.find(params[:id])
-    @child = @parent.child_replies.build(params[:reply])
+    @child = @parent.child_replies.create(params[:reply])
 
     @child.user = @user
 

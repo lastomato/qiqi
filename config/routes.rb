@@ -5,29 +5,20 @@ Qiqi::Application.routes.draw do
   match "/logout" => "sessions#destroy"
   match "/register" => "users#new"
 
-  namespace :session do
-    match "/create" => "sessions#create"
-  end
+  match "/session/create" => "sessions#create"
 
-  namespace :reply do
-    match "/new" => "replies#new"
-    match "/create" => "replies#create"
-    match "/reply/:id" => "replies#reply"
-    match "/destroy/:id" => "replies#destroy"
-  end
+  match "/reply/new" => "replies#new"
+  match "/reply/create" => "replies#create"
+  match "/reply/:id" => "replies#reply", :as => :reply
+  match "/reply/destroy/:id" => "replies#destroy", :as => :reply_destroy
 
-  namespace :topic do
-    match "/new" => "topics#new"
-    match "/create" => "topics#create"
-    match "/reply/:id" => "topics#reply"
-    match "/destroy/:id" => "topics#destroy"
-  end
+  match "/topic/new" => "topics#new"
+  match "/topic/create" => "topics#create"
+  match "/topic/reply/:id" => "topics#reply", :as => :topic_reply
+  match "/topic/destroy/:id" => "topics#destroy", :as => :topic_destroy
 
-  namespace :user do
-    match "/index" => "users#index"
-    match "/create" => "users#create"
-
-    match "/:username" => "users#single"
-    match "/destroy/:number" => "users#destroy"
-  end
+  match "/user/index" => "users#index"
+  match "/user/create" => "users#create"
+  match "/user/:username" => "users#single", :as => :user
+  match "/user/destroy/:number" => "users#destroy", :as => :user_destroy
 end

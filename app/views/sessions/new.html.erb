@@ -1,11 +1,11 @@
 <%= form_tag session_create_path do |f| %>
   <p>
-    <%= text_field_tag :username, nil, :placeholder => "Username", :class => "input-xlarge" %>
+    <%= text_field_tag :username, nil, :placeholder => "Username", :class => "login-input" %>
   </p>
 
   <p>
-    <%= password_field_tag :password, nil, :placeholder => "Password", :class => "input-xlarge" %>
+    <%= password_field_tag :password, nil, :placeholder => "Password", :class => "login-input" %>
   </p>
 
-  <%= submit_tag :submit, :class => "btn-primary login-btn" %>
+  <%= submit_tag :submit, :class => "login-btn" %>
 <% end %>

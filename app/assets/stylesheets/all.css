@@ -1,3 +1,55 @@
-.login-btn {
-    width: 150px;
+.login-input, .register-input{
+    display:block;
+    width:250px;
+    padding:10px 5px;
+    margin:0 0 18px;
+    font-size:16px;
+    line-height:18px;
+    /*background:#e8f4fc;*/
+    border:1px solid #0d7bd5;
+    color:#888;
+    cursor:text;
+    ime-mode:disabled;
+    box-shadow:0 1px 0 rgba(255,255,255,.3),0 1px 3px rgba(0,0,0,.3) inset;
+    background-clip:padding-box;
+    border-radius:5px
+}
+
+.login-btn, .register-btn{
+    background:#1e95e5;
+    color:#b7d4ec;
+    color:rgba(255,255,255,.7);
+    box-shadow:0 1px 0 rgba(0,0,0,.05),0 1px 0 rgba(255,255,255,.15) inset;
+    border:1px solid #147dcd;
+    cursor:pointer;
+    display:inline-block;
+    font-size:14px;
+    line-height:18px;
+    text-shadow:0 1px 0 rgba(0,0,0,.2);
+    padding:6px 15px;
+    text-align:center;
+    vertical-align:middle;
+    border-radius:5px;
+    *color:#b7d4ec;
+}
+
+.login-btn:active{
+    background:#1d8fdb;
+    box-shadow:0 1px 0 rgba(255,255,255,.15)
+}
+
+.login-btn:focus{
+    box-shadow:0 0 10px rgba(255,255,255,.5),0 1px 0 rgba(255,255,255,.15) inset
+}
+
+.margin-auto {
+    margin: 0px auto;
+}
+
+.auth {
+    width: auto;
+}
+
+div {
+    border: 1px solid black;
 }

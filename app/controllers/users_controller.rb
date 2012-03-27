@@ -1,5 +1,6 @@
 class UsersController < ApplicationController
   before_filter :logged_in?, :only => [:destroy]
+  layout "index", :only => [:new]
 
   def index
   end
@@ -9,7 +10,7 @@ class UsersController < ApplicationController
   end
 
   def create
-    @user = User.build(params[:user])
+    @user = User.create(params[:user])
 
     if @user.try(:save)
       redirect_to user_index_path(@user.number)

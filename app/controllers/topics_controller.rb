@@ -11,7 +11,7 @@ class TopicsController < ApplicationController
 
   def create
     @user = User.find_by_number(current_user.number)
-    @topic = @user.topics.build(params[:topic])
+    @topic = @user.topics.create(params[:topic])
 
     if @topic.try(:save)
       respond_to do |format|
@@ -27,7 +27,7 @@ class TopicsController < ApplicationController
   def reply
     @user = User.find_by_number(current_user.number)
     @topic = Topic.find(params[:id])
-    @reply = @topic.replies.build(params[:reply])
+    @reply = @topic.replies.create(params[:reply])
 
     @reply.user = @user
 

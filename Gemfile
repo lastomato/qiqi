@@ -23,7 +23,7 @@ gem 'bson_ext'
 gem 'mongoid-paperclip', :require => 'mongoid_paperclip'
 gem 'mongoid_auto_inc'
 
-gem 'bcrypt-ruby'
+gem 'bcrypt-ruby', :require => 'bcrypt'
 
 gem 'coderay'
 gem 'redcarpet'

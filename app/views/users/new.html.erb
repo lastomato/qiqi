@@ -1,15 +1,11 @@
-<%= form_tag user_create_path do |f| %>
-    <%= label_tag :username %>
-    <%= text_field_tag :username, nil, :placeholder => "Username" %>
+<%= form_for @user, :url => user_create_path do |f| %>
+    <p><%= f.text_field :username, :placeholder => "Username", :class => "register-input" %></p>
 
-    <%= label_tag :password %>
-    <%= password_field_tag :password, nil, :placeholder => "Password" %>
+    <p><%= f.password_field :password, :placeholder => "Password", :class => "register-input" %></p>
 
-    <%= label_tag :password_confirmation %>
-    <%= password_field_tag :password_confirmation, nil, :placeholder => "Confirm Password" %>
+    <p><%= f.password_field :password_confirmation, :placeholder => "Confirm Password", :class => "register-input" %></p>
 
-    <%= label_tag :email %>
-    <%= email_field_tag :email, nil, :placeholder => "Email" %>
+    <p><%= f.email_field :email, :placeholder => "Email", :class => "register-input" %></p>
 
-    <%= submit_tag :submit %>
+    <%= f.submit :submit, :class => "register-btn" %>
 <% end %>
