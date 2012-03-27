@@ -3,6 +3,7 @@ class UsersController < ApplicationController
   layout "index", :only => [:new]
 
   def index
+    @user = current_user
   end
 
   def new
@@ -13,7 +14,7 @@ class UsersController < ApplicationController
     @user = User.create(params[:user])
 
     if @user.try(:save)
-      redirect_to user_index_path(@user.number)
+      redirect_to user_index_path
     else
       redirect_to register_path, :alert => "Unsuccessful. Please try again!"
     end
