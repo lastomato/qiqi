@@ -5,35 +5,35 @@ Simple mail list
 
 == Features
 
-1. publish, edit, delete posts;
+* publish, edit, delete posts;
 - app/models/topic.rb[https://github.com/lastomato/qiqi/blob/master/app/models/topic.rb]
 - app/models/reply.rb[https://github.com/lastomato/qiqi/blob/master/app/models/reply.rb]
 - app/controllers/topics_controller.rb[https://github.com/lastomato/qiqi/blob/master/app/controllers/topics_controller.rb]
 - app/controllers/replies_controller.rb[https://github.com/lastomato/qiqi/blob/master/app/controllers/replies_controller.rb]
 - app/views/shared/*.js.erb[https://github.com/lastomato/qiqi/blob/master/app/views/shared]
-2. inline code hilighting; 
+* inline code hilighting; 
 - app/helpers/application_helper.rb[https://github.com/lastomato/qiqi/blob/master/app/helpers/application_helper.rb]
-3. mail notification(configurable);
+* mail notification(configurable);
 - app/mailers/*.rb[https://github.com/lastomato/qiqi/blob/master/app/mailers](not finished yet)
-4. nested reply display(auto indent);
+* nested reply display(auto indent);
 - app/views/topics/*.html.erb[https://github.com/lastomato/qiqi/blob/master/app/views/topics]
   - app/views/shared/*.js.erb[https://github.com/lastomato/qiqi/blob/master/app/views/shared]
-5. at notification;
+* at notification;
 - app/helpers/application_helper.rb[https://github.com/lastomato/qiqi/blob/master/app/helpers/application_helper.rb]
-6. nice views;
+* nice views;
 - app/views/*[https://github.com/lastomato/qiqi/blob/master/app/views]
 - app/assets/*[https://github.com/lastomato/qiqi/blob/master/app/assets]
 
 == Todo
 
-1. test 1~5;
+* test features;
 - check rspec-rails[https://github.com/rspec/rspec-rails]
 - check capybara[https://github.com/jnicklas/capybara]
 - check cucumber[https://github.com/cucumber/cucumber]
-2. write views(css/html/javascript);
-3. mail notification;
+* write views(css/html/javascript);
+* mail notification;
 - check rails guides - mailer[http://guides.rubyonrails.org/action_mailer_basics.html]
-4. routes optimization
+* routes optimization
 - check rails guides - routes[http://guides.rubyonrails.org/routing.html]
-5. user publish history
+* user publish history
 - app/models/history.rb (one-to-one relationship with user)
