@@ -6,7 +6,7 @@ Simple mail list
 == Features
 
 1. publish, edit, delete posts;
-> app/models/topic.rb[https://github.com/lastomato/qiqi/blob/master/app/models/topic.rb]
+** app/models/topic.rb[https://github.com/lastomato/qiqi/blob/master/app/models/topic.rb]
 > app/models/reply.rb[https://github.com/lastomato/qiqi/blob/master/app/models/reply.rb]
 > app/controllers/topics_controller.rb[https://github.com/lastomato/qiqi/blob/master/app/controllers/topics_controller.rb]
 > app/controllers/replies_controller.rb[https://github.com/lastomato/qiqi/blob/master/app/controllers/replies_controller.rb]
