@@ -14,7 +14,7 @@ Simple mail list
 > inline code hilighting; 
 1. app/helpers/application_helper.rb[https://github.com/lastomato/qiqi/blob/master/app/helpers/application_helper.rb]
 > mail notification(configurable);
-1. app/mailers/*.rb[https://github.com/lastomato/qiqi/blob/master/app/mailers](not finished yet)
+1. app/mailers/*.rb[https://github.com/lastomato/qiqi/blob/master/app/mailers] (not finished yet)
 > nested reply display(auto indent);
 1. app/views/topics/*.html.erb[https://github.com/lastomato/qiqi/blob/master/app/views/topics]
 2. app/views/shared/*.js.erb[https://github.com/lastomato/qiqi/blob/master/app/views/shared]
