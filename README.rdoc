@@ -6,11 +6,11 @@ Simple mail list
 == Features
 
 1. publish, edit, delete posts;
-* app/models/topic.rb[https://github.com/lastomato/qiqi/blob/master/app/models/topic.rb]
-* app/models/reply.rb[https://github.com/lastomato/qiqi/blob/master/app/models/reply.rb]
- 3. app/controllers/topics_controller.rb[https://github.com/lastomato/qiqi/blob/master/app/controllers/topics_controller.rb]
- 4. app/controllers/replies_controller.rb[https://github.com/lastomato/qiqi/blob/master/app/controllers/replies_controller.rb]
- 5. app/views/shared/*.js.erb[https://github.com/lastomato/qiqi/blob/master/app/views/shared]
+> app/models/topic.rb[https://github.com/lastomato/qiqi/blob/master/app/models/topic.rb]
+> app/models/reply.rb[https://github.com/lastomato/qiqi/blob/master/app/models/reply.rb]
+> app/controllers/topics_controller.rb[https://github.com/lastomato/qiqi/blob/master/app/controllers/topics_controller.rb]
+> app/controllers/replies_controller.rb[https://github.com/lastomato/qiqi/blob/master/app/controllers/replies_controller.rb]
+> app/views/shared/*.js.erb[https://github.com/lastomato/qiqi/blob/master/app/views/shared]
 2. inline code hilighting; 
  1. app/helpers/application_helper.rb[https://github.com/lastomato/qiqi/blob/master/app/helpers/application_helper.rb]
 * mail notification(configurable);
