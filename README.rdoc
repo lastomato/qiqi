@@ -33,7 +33,9 @@ Simple mail list
 > write views(css/html/javascript);
 > mail notification;
 1. check rails guides - mailer[http://guides.rubyonrails.org/action_mailer_basics.html]
+2. check mailer file[https://github.com/lastomato/qiqi/blob/master/app/mailers]
 > routes optimization
 1. check rails guides - routes[http://guides.rubyonrails.org/routing.html]
+2. check route file[https://github.com/lastomato/qiqi/blob/master/config/routes.rb]
 > user publish history
 1. app/models/history.rb (one-to-one relationship with user)
